@@ -1,4 +1,4 @@
-package org.dasc.kotlin
+package org.pgrepds.kotlin
 
 // everything is per default final in kotlin. we need to actively open the class for inheritance
 

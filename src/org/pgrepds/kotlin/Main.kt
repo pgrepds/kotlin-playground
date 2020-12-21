@@ -1,6 +1,7 @@
-package org.dasc.kotlin
+package org.pgrepds.kotlin
 
-import org.dasc.kotlin.different.addDifferent
+import org.pgrepds.kotlin.different.addDifferent
+import org.pgrepds.kotlin.extensions.SomeClass
 
 // a kotlin file is automatically converted to a kotlin class if it contains only a single class
 // a kotlin class containing more than one class will automatically be converted to a kotlin file
@@ -41,4 +42,12 @@ fun main(args: Array<String>) {
     println(classTest.name)
 
     println(TestOpenClass.createTestOpenClass("Test Factory").name)
+
+    // lets see it this is working
+    val testSomeClass: SomeClass = SomeClass()
+    testSomeClass.thisWouldBeCrazy()
+}
+
+fun SomeClass.thisWouldBeCrazy() {
+    println("Kotlin is madness")
 }
